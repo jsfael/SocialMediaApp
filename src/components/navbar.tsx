@@ -11,28 +11,40 @@ export const Navbar = () => {
   };
   return (
     <div
-      style={{display: "flex", justifyContent: "space-between", alignItems: "center", backgroundColor: "#f0f0f0", padding: "10px", height: "50px",
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        backgroundColor: "#f0f0f0",
+        padding: "10px",
+        height: "50px",
       }}
     >
-      <div style={{ display: "flex", gap: "10px" }}>
-        <Link
-          to="/"
-          style={{textDecoration: "none", color: "#007bff", fontWeight: "bold",
-          }}
-        >
+      <div className="navbar-links" style={{ display: "flex", gap: "10px" }}>
+        <Link to="/" className="navbar-link">
           Home
         </Link>
-        {!user && (
-          <>
-            <Link to="/login" style={{ textDecoration: "none", color: "#007bff", fontWeight: "bold"}}>Login </Link>
-          </>
+        {!user ? (
+        <Link to="/login" className="navbar-link">
+          Login
+        </Link>
+        ) : (
+          <Link to="/createpost" className="navbar-link">
+        Create Post
+          </Link>
         )}
       </div>
       <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
         {user && (
           <>
             <h3 style={{ margin: "0" }}>{user?.displayName}</h3>
-            <img src={user?.photoURL || ""} width="50px" height="50px" style={{ borderRadius: "10px" }} alt="userPhoto" />
+            <img
+              src={user?.photoURL || ""}
+              width="50px"
+              height="50px"
+              style={{ borderRadius: "10px" }}
+              alt="userPhoto"
+            />
             <button onClick={signUserOut}> Log Out </button>
           </>
         )}
