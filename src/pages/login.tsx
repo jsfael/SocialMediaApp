@@ -12,9 +12,23 @@ export const Login = () => {
   };
 
   return (
-    <div>
-      <p>Sign In With Google To Continue</p>
-      <button onClick={signInWithGoogle}>Sign In With Google</button>
+    <div style={{display: "flex", flexDirection: "column", gap: "10px", alignItems: "center"}}>
+      <h3>Sign In With Google To Continue</h3>
+      <button 
+        onClick={signInWithGoogle} 
+        style={{
+          padding: "10px 20px",
+          fontSize: "16px",
+          color: "#fff",
+          backgroundColor: "#4285F4",
+          border: "none",
+          borderRadius: "5px",
+          cursor: "pointer",
+          gap: "10px"
+        }}
+      >
+        Sign In With Google
+      </button>
     </div>
   );
 };

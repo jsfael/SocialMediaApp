@@ -21,16 +21,43 @@ export const Navbar = () => {
       }}
     >
       <div className="navbar-links" style={{ display: "flex", gap: "10px" }}>
-        <Link to="/" className="navbar-link">
+        <Link
+          to="/"
+          className="navbar-link"
+          style={{
+            color: "black",
+            textDecoration: "none",
+            fontWeight: "bold",
+            fontSize: "18px",
+          }}
+        >
           Home
         </Link>
         {!user ? (
-        <Link to="/login" className="navbar-link">
-          Login
-        </Link>
+          <Link
+            to="/login"
+            className="navbar-link"
+            style={{
+              color: "black",
+              textDecoration: "none",
+              fontWeight: "bold",
+              fontSize: "18px",
+            }}
+          >
+            Login
+          </Link>
         ) : (
-          <Link to="/createpost" className="navbar-link">
-        Create Post
+          <Link
+            to="/createpost"
+            className="navbar-link"
+            style={{
+              color: "black",
+              textDecoration: "none",
+              fontWeight: "bold",
+              fontSize: "18px",
+            }}
+          >
+            Create Post
           </Link>
         )}
       </div>
@@ -45,7 +72,9 @@ export const Navbar = () => {
               style={{ borderRadius: "10px" }}
               alt="userPhoto"
             />
-            <button onClick={signUserOut}> Log Out </button>
+            <button style={{ cursor: "pointer" }} onClick={signUserOut}>
+              Log Out
+            </button>
           </>
         )}
       </div>
