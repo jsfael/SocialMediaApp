@@ -12,7 +12,7 @@ Este é um aplicativo de mídia social construído com React, Firebase e TypeScr
 
 ## Teste o Aplicativo
 
-Caso queira ver o aplicativo, você pode acessá-lo no seguinte link: [\SocialMediaApp-react\]](https://socialmediaapp-react.web.app/)
+Caso queira ver o aplicativo, você pode acessá-lo no seguinte link: [SocialMediaApp-react](https://socialmediaapp-react.web.app/)
 
 ## Foco do Projeto
 
@@ -112,8 +112,7 @@ Para fazer o deploy do seu projeto no Firebase Hosting, siga os passos abaixo:
 
 Sinta-se à vontade para abrir issues e pull requests para melhorias e correções.
 
-
-##  ENGLISH  ##
+## ENGLISH
 
 # Social Media App
 
@@ -129,7 +128,7 @@ This is a social media app built with React, Firebase, and TypeScript.
 
 ## Test the Application
 
-If you want to test the application, you can access it at the following link: [\SocialMediaApp-react\]](https://socialmediaapp-react.web.app/)
+If you want to test the application, you can access it at the following link: [SocialMediaApp-react](https://socialmediaapp-react.web.app/)
 
 ## Project Focus
 

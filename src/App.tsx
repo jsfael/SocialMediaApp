@@ -18,7 +18,7 @@ function App() {
         </Routes>
       </Router>
       <a
-        href="https://github.com/seu-usuario/seu-repositorio"
+        href="https://github.com/jsfael/SocialMediaApp.git"
         target="_blank"
         rel="noopener noreferrer"
         className="floating-git-button"
