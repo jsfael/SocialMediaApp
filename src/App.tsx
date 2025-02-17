@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Main } from "./pages/main-page/main";
@@ -16,6 +17,14 @@ function App() {
           <Route path="/createpost" element={<CreatePost />} />
         </Routes>
       </Router>
+      <a
+        href="https://github.com/seu-usuario/seu-repositorio"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="floating-git-button"
+      >
+        <img src="/git-logo.png" alt="GitHub" />
+      </a>
     </div>
   );
 }
